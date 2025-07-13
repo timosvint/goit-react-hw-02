@@ -1,6 +1,6 @@
 import css from "./feedback.module.css"
 
-const FeedbackUi = ({clicks, onPositive}) => {
+const FeedbackUi = ({clicks, onPositive, totalFeedback}) => {
     return (
         <ul>
             <li>
@@ -11,6 +11,9 @@ const FeedbackUi = ({clicks, onPositive}) => {
             </li>
             <li>
                 <p>Bad:{clicks.bad }</p>
+            </li>
+            <li>
+                <p>Total:{totalFeedback}</p>
             </li>
             <li>
                 <p>Positive:%{onPositive }</p>

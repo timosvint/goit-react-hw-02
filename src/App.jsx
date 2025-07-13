@@ -46,7 +46,7 @@ export const App = () => {
       
       <OptionsUi onUpdateFeedback={updateFeedback} onReset={resetUpdate} totalFeedback={totalFeedback} />
 
-      {totalFeedback > 0 ? (<FeedbackUi clicks={clicks} onPositive={positive} />) : (<NotificationUi />)}
+      {totalFeedback > 0 ? (<FeedbackUi clicks={clicks} onPositive={positive} totalFeedback={totalFeedback} />) : (<NotificationUi />)}
      
     </div>
   )

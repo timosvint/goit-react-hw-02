@@ -10,7 +10,7 @@ const OptionsUi = ({ onUpdateFeedback, onReset, totalFeedback }) => {
 
              <button type="button" onClick={() => onUpdateFeedback("neutral")}>Neutral</button>
 
-             <button type="button" onClick={() => onUpdateFeedback("bad")}>Bad</button>
+            <button type="button" onClick={() => onUpdateFeedback("bad")}>Bad</button>
 
             { totalFeedback > 0 && ( <button type="button" onClick={onReset}>Reset</button>)}
             </div>
